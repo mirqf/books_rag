@@ -55,13 +55,7 @@
 pip install -r requirements.txt
 ```
 
-3. Задайте токен Telegram-бота:
-
-```bash
-export BOT_TOKEN="ваш_telegram_token"
-```
-
-4. Запустите бота:
+3. Запустите бота:
 
 ```bash
 python3 bot.py
@@ -69,26 +63,6 @@ python3 bot.py
 
 Фанфакт: Telegram username этого бота — `@jatbro_bot`.
 
-## Как включить LLM через OpenRouter
-
-OpenRouter обязателен. Без него бот не стартует.
-
-```bash
-export OPENROUTER_API_KEY="ваш_openrouter_api_key"
-export OPENROUTER_MODEL="укажите_модель_опционально"
-```
-
-После этого перезапустите бота.
-
-Что нужно сделать вам:
-
-1. Зарегистрироваться в OpenRouter.
-2. Получить API key.
-3. Опционально выбрать модель и прописать ее в `OPENROUTER_MODEL`.
-4. Перезапустить `python3 bot.py`.
-
-Если задан только `OPENROUTER_API_KEY`, бот по умолчанию использует `openrouter/free`.
-Если конфигурация OpenRouter невалидна, бот не запустится.
 
 ## Как загружать книги
 
